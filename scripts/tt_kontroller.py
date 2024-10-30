@@ -19,21 +19,25 @@ Moving around:
 w/x : increase/decrease linear velocity
 a/d : increase/decrease angular velocity
 s : force stop
-q/e : increase/decrease speed
+t/b : increase/decrease speed
 
 CTRL-C to quit
 """
 
 move_bindings = {
-    'w': (1, 0, 0, 0),  # Forward
-    's': (-1, 0, 0, 0),  # Backward
-    'a': (0, 0, 0, 1),  # Left
-    'd': (0, 0, 0, -1),  # Right
+    'w': (1,0,0,0),
+    'e': (1,0,0,-1),
+    'a': (0,0,0,1),
+    'd': (0,0,0,-1),
+    'q': (1,0,0,1),
+    'x': (-1,0,0,0),
+    'c': (-1,0,0,1),
+    'z': (-1,0,0,-1),
 }
 
 speed_bindings = {
-    'q': (1.1, 1.1),  # Increase speed
-    'e': (0.9, 0.9),  # Decrease speed
+    't': (1.1, 1.1),  # Increase speed
+    'b': (0.9, 0.9),  # Decrease speed
 }
 
 
